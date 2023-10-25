@@ -11,10 +11,16 @@ const remakeGrid = () => {
         for (let j = 0; j < dimension; j++) {
             const cell = document.createElement("span");
             cell.classList.add("cell");
+            cell.addEventListener("mouseenter", onMouseEnter);
             row.appendChild(cell);
         }
         board.appendChild(row);
     }
+}
+
+const onMouseEnter = (e) => {
+    const cell = e.target;
+    cell.classList.add("hovered");
 }
 
 remakeGrid();
