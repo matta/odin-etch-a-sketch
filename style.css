@@ -1,0 +1,22 @@
+:root {
+    --grid-width: 300px;
+    --grid-height: 300px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: var(--grid-width);
+    width: var(--grid-height);
+}
+
+.row {
+    flex: 1;
+    display: flex;
+}
+
+.cell {
+    flex: 1;
+    border: 1px solid lightgray;
+}
