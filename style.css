@@ -1,14 +1,13 @@
 :root {
-    --grid-width: 300px;
-    --grid-height: 300px;
+    --board-size: 400px;
 }
 
-.grid {
+.board {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    height: var(--grid-width);
-    width: var(--grid-height);
+    height: var(--board-size);
+    width: var(--board-size);
 }
 
 .row {
